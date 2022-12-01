@@ -848,3 +848,134 @@ a {
 .contacts__main-image {
   border-radius: 10px;
 }
+
+/* footer */
+.footer {
+  margin-bottom: 30px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  height: 341px;
+  border-radius: 15px;
+  padding: 45px;
+
+  background-color: #333333;
+
+  background-image: url("../img/logo-image.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 177px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 302px;
+  height: 100%;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9em;
+
+  color: #ffffff;
+}
+
+.footer__agreement {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #cc9933;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__location {
+  margin-bottom: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88em;
+  color: #ffffff;
+}
+
+.footer__communication {
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #cc9933;
+}
+
+.footer__number:nth-last-child(3n) {
+  margin-bottom: 15px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 25px;
+  height: 115px;
+}
+
+.social__item {
+  display: inline-block;
+
+  width: 25px;
+  height: 25px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transition: background-image var(--link-transition-duration) ease;
+}
+
+.tripadvisor {
+  background-image: url("../img/social/tripadvisor.svg");
+}
+
+.tripadvisor:hover,
+.tripadvisor:focus {
+  background-image: url("../img/social/tripadvisor_hover.svg");
+}
+
+.tripadvisor:active {
+  background-image: url("../img/social/tripadvisor_active.svg");
+}
+
+.odnoklassniki {
+  background-image: url("../img/social/ok.svg");
+}
+
+.odnoklassniki:hover,
+.odnoklassniki:focus {
+  background-image: url("../img/social/ok_hover.svg");
+}
+
+.odnoklassniki:active {
+  background-image: url("../img/social/ok_active.svg");
+}
+
+.vkontakte {
+  background-image: url("../img/social/vk.svg");
+}
+
+.vkontakte:hover,
+.vkontakte:focus {
+  background-image: url("../img/social/vk_hover.svg");
+}
+
+.vkontakte:active {
+  background-image: url("../img/social/vk_active.svg");
+}
