@@ -427,3 +427,19 @@ a {
 
   transition: margin-left var(--link-transition-duration) ease;
 }
+
+/* about */
+
+.about {
+  margin-bottom: 70px;
+}
+
+.about__info {
+  width: 888px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2em;
+
+  color: #000000;
+}
