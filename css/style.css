@@ -288,12 +288,18 @@ a {
 }
 
 /* offers */
+.offers {
+  margin-bottom: 70px;
+}
+
 .offers__items {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 
-  height: 573px;
+  height: 540px;
   width: 100%;
 }
 
@@ -337,13 +343,13 @@ a {
   margin-left: 10px;
 }
 
-.offer:first-child {
+/* .offer:first-child {
   margin-bottom: 24px;
 }
 
 .offer:last-child {
   margin-left: 24px;
-}
+} */
 
 .maldives {
   background-image: url("../img/offers/Maldives.jpg");
