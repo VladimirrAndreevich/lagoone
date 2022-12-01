@@ -118,6 +118,28 @@ a {
   border-color: var(--btn-color-active);
 }
 
+.arrow-link {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-link::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 11px;
+  height: 17px;
+  margin-left: 7px;
+
+  background-image: url("../img/link-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  transition: margin-left var(--link-transition-duration) ease;
+}
+
 /* header */
 .header {
   margin-top: 30px;
@@ -448,4 +470,77 @@ a {
   line-height: 2em;
 
   color: #000000;
+}
+
+/* services */
+
+.services {
+  margin-bottom: 70px;
+}
+
+.services__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+
+  width: 100%;
+  height: 684px;
+}
+
+.service {
+  display: inline-block;
+
+  width: 573px;
+  height: 330px;
+  padding: 191px 45px 35px 45px;
+
+  border-radius: 15px;
+
+  background-color: #fff;
+
+  transition: box-shadow var(--link-transition-duration) ease;
+}
+
+.service:hover .arrow-link::after {
+  margin-left: 11px;
+}
+
+.service:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.service__heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 2em;
+  color: #cc9933;
+}
+.service__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2em;
+  color: #000000;
+}
+
+.service {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.exclusive-service {
+  background-image: url("../img/services/exclusive-service.jpg");
+}
+
+.pool {
+  background-image: url("../img/services/pool.jpg");
+}
+
+.banqueting-hall {
+  background-image: url("../img/services/banqueting-hall.jpg");
+}
+
+.parking {
+  background-image: url("../img/services/cars.jpg");
 }
