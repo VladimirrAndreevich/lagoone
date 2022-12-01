@@ -544,3 +544,72 @@ a {
 .parking {
   background-image: url("../img/services/cars.jpg");
 }
+
+/* benefits */
+.benefits {
+  margin-bottom: 70px;
+}
+
+.benefits__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 576px;
+}
+
+.benefits__card {
+  display: inline-block;
+
+  height: 276px;
+  width: 276px;
+  border-radius: 15px;
+
+  background-color: #fff;
+}
+
+.benefits__info {
+  padding: 116px 42px 32px 45px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2em;
+  color: #000000;
+}
+
+.benefits__card {
+  background-repeat: no-repeat;
+  background-position: left 45px top 40px;
+}
+
+.bathtub-decor {
+  background-image: url("../img/benefits-decor/bathtub.svg");
+}
+
+.hanger-decor {
+  background-image: url("../img/benefits-decor/hanger.svg");
+}
+
+.heating-decor {
+  background-image: url("../img/benefits-decor/heating.svg");
+}
+
+.key-decor {
+  background-image: url("../img/benefits-decor/hotel-key.svg");
+}
+
+.parking-decor {
+  background-image: url("../img/benefits-decor/parking.svg");
+}
+.reception-decor {
+  background-image: url("../img/benefits-decor/reception.svg");
+}
+.security-decor {
+  background-image: url("../img/benefits-decor/security-box.svg");
+}
+.pool-decor {
+  background-image: url("../img/benefits-decor/swimming-pool.svg");
+}
