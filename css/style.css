@@ -192,6 +192,10 @@ a {
 }
 
 .header__login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   margin-left: auto;
 
   font-weight: 400;
@@ -204,7 +208,18 @@ a {
   transition-timing-function: ease;
 }
 
-.header__login::before {
+.login-decor {
+  width: 24px;
+  height: 24px;
+  margin-right: 7px;
+  margin-bottom: 4px;
+
+  fill: #cc9933;
+
+  transition: fill 0.8s ease;
+}
+
+/* .header__login::before {
   display: inline-block;
   content: "";
 
@@ -220,15 +235,19 @@ a {
   transition-property: background-image;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-}
+} */
 
 .header__login:hover {
   color: #f0bf5f;
 }
 
-.header__login:hover::before {
-  background-image: url("../img/login-decor_hover.svg");
+.header__login:hover .login-decor {
+  fill: #f0bf5f;
 }
+
+/* .header__login:hover::before {
+  background-image: url("../img/login-decor_hover.svg");
+} */
 
 .header__login:focus {
   color: #cc9933;
@@ -243,8 +262,12 @@ a {
   outline: none;
 }
 
-.header__login:active::before {
+/* .header__login:active::before {
   background-image: url("../img/login-decor_active.svg");
+} */
+
+.header__login:active .login-decor {
+  fill: #a47312;
 }
 
 .header__bottom-section {
@@ -940,9 +963,32 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
 
-  transition: background-image var(--link-transition-duration) ease;
+  /* transition: background-image var(--link-transition-duration) ease; */
 }
 
+.social__svg {
+  width: 25px;
+  height: 25px;
+
+  fill: #999999;
+
+  transition: fill 0.8s ease;
+}
+
+.social__item:hover .social__svg,
+.social__item:focus .social__svg {
+  fill: #cc9933;
+}
+
+.social__item:focus {
+  outline: none;
+}
+
+.social__item:active .social__svg {
+  fill: #a47312;
+}
+
+/* 
 .tripadvisor {
   background-image: url("../img/social/tripadvisor.svg");
 }
@@ -980,4 +1026,4 @@ a {
 
 .vkontakte:active {
   background-image: url("../img/social/vk_active.svg");
-}
+} */
